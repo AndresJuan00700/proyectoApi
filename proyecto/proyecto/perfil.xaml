@@ -2,11 +2,70 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto.perfil">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+
+        <FlexLayout JustifyContent="Center"   >
+
+            <Label Text="Perfil"    FontSize="40" FontAttributes="Bold" Margin="0,100,0,0" />
+
+
+
+        </FlexLayout>
+        <FlexLayout JustifyContent="Center"  Direction="Column" Padding="0,0,0,60" >
+            <Image Source="https://phantom-marca.unidadeditorial.es/93c588f8ef3e7debe1ab204af85a2967/resize/1320/f/jpg/assets/multimedia/imagenes/2022/05/16/16527011306721.jpg" Margin="40,0,40,0" />
+            <Label Text="Bicho paternina" Padding="130,10,0,0"  FontAttributes="Bold" FontSize="20" />
+        </FlexLayout>
+
+        <RelativeLayout    >
+            <StackLayout Orientation="Horizontal"  >
+                <Label Text="Contacto:" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20"    />
+                <Label Text="+57 223153456" Padding="5,5,0,0" FontAttributes="Bold"     />
+
+            </StackLayout>
+
+            <BoxView Color="Black"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="30"
+                 RelativeLayout.WidthConstraint="800"
+                 RelativeLayout.HeightConstraint="2" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout  Margin="0,-110,0,0"  >
+            <StackLayout Orientation="Horizontal"  >
+                <Label Text="Email:" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20"    />
+                <Label Text="bicho@gmail.com" Padding="5,5,0,0" FontAttributes="Bold"     />
+
+            </StackLayout>
+
+            <BoxView Color="Black"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="30"
+                 RelativeLayout.WidthConstraint="800"
+                 RelativeLayout.HeightConstraint="2" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout  Margin="0,-110,0,0"  >
+            <StackLayout Orientation="Horizontal"  >
+                <Label Text="Dirrecion:" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20"    />
+                <Label Text="Clle 232 #12" Padding="5,5,0,0" FontAttributes="Bold"     />
+
+            </StackLayout>
+
+            <BoxView Color="Black"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="30"
+                 RelativeLayout.WidthConstraint="800"
+                 RelativeLayout.HeightConstraint="2" />
+
+        </RelativeLayout>
+
+
+
+
+    </StackLayout>
 </ContentPage>

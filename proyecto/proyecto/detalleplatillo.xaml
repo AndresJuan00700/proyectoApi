@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.detalleplatillo">
+    <StackLayout>
+
+        <FlexLayout JustifyContent="Center"   >
+
+            <Label Text="Detalles del platillo"    FontSize="30" FontAttributes="Italic" Margin="0,100,0,0" />
+
+
+
+        </FlexLayout>
+        <RelativeLayout Margin="0,-10,0,-0"   >
+
+
+            <BoxView Color="Black"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="30"
+                 RelativeLayout.WidthConstraint="800"
+                 RelativeLayout.HeightConstraint="2" />
+
+        </RelativeLayout>
+
+
+        <StackLayout Orientation="Horizontal"  >
+            <Label Text="Nombre:" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20"    />
+            <Label Text="Carne de res" Padding="160,5,0,0" FontAttributes="Bold"  FontSize="15"   />
+
+        </StackLayout>
+
+
+        <RelativeLayout   Margin="0,-10,0,10"  >
+
+
+            <BoxView Color="Black"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="30"
+                 RelativeLayout.WidthConstraint="800"
+                 RelativeLayout.HeightConstraint="2" />
+
+        </RelativeLayout>
+
+
+        <StackLayout  Margin="10,-10,0,0" >
+            <Label Text="Descripcion:" Margin="0,0,0,10" FontAttributes="Bold" FontSize="20"    />
+            <Label Text="Carnes de res asada a la parrilla, con papas a la francesa,
+                paracpnes y ensalada   " Padding="5,5,0,100" FontAttributes="Bold"     />
+
+
+        </StackLayout>
+        <FlexLayout JustifyContent="Center" Margin="0,-70,0,0"  >
+            <StackLayout Orientation="Horizontal"    >
+                <Button Text="-"  CornerRadius="50" Background="orange" />
+                <Button Text="2"  CornerRadius="50"  Background="orange"/>
+                <Button Text="+"  CornerRadius="50" Background="orange" />
+            </StackLayout>
+        </FlexLayout>
+        <RelativeLayout    >
+
+
+            <BoxView Color="Black"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="30"
+                 RelativeLayout.WidthConstraint="800"
+                 RelativeLayout.HeightConstraint="2" />
+
+        </RelativeLayout>
+
+        <FlexLayout JustifyContent="Center" Margin="0,0,0,0"  >
+
+            <Button Text="Comprar"  CornerRadius="50"  Background="black" TextColor="White"   Margin="0,0,0,230" />
+
+
+        </FlexLayout>
+
+    </StackLayout>
+</ContentPage>
