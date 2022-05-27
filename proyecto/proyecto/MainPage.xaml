@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.MainPage">
+
+    <ContentPage.Content>
+
+        <StackLayout Padding="10" Margin="10,100,10,0">
+
+            <Frame  BackgroundColor="#3331" HeightRequest="500" WidthRequest="100"  Padding="20" Margin="0">
+
+                <StackLayout>
+
+                    <StackLayout WidthRequest="50" HeightRequest="50">
+                        <Label Text="INICIAR SESIÓN" TextColor="Black" FontSize="28" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                    <StackLayout Padding="0" Margin="15,10">
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5" BackgroundColor="Transparent">
+                                    <Image Source="user.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Entry Placeholder="Email" TextColor="White" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame  HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5" BackgroundColor="Transparent">
+                                    <Image Source="password.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Entry Placeholder="Password" IsPassword="True" TextColor="White" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!--StackLayout  Orientation="Horizontal">
+                                <Label Text="¿Olvidaste tu contraseña?" TextColor="#2196F3" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                            </StackLayout-->
+
+                        <Button Text="INICIAR SESIÓN" Margin="0,20,0,0" BackgroundColor="#2196F3" TextColor="Black" CornerRadius="30" />
+
+                        <StackLayout Margin="0,25,0,0" Padding="0">
+                            <Grid>
+                                <BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="150"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Frame BackgroundColor="White" HeightRequest="50" WidthRequest="50" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                    <Label Text="OR" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="¿Crear Cuenta Nueva?" TextColor="#2196F3" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                            <Button Text="Registrar Usuarios" Margin="0,20,0,0" BackgroundColor="#2196F3" TextColor="Black" CornerRadius="30" />
+                        </StackLayout>
+
+                        <StackLayout  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Frame BackgroundColor="White" HeightRequest="50" WidthRequest="50" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                <Image Source="https://w7.pngwing.com/pngs/662/783/png-transparent-facebook-inc-social-media-computer-icons-social-network-facebook-blue-text-trademark.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Frame BackgroundColor="White" HeightRequest="50" WidthRequest="50" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                <Image Source="https://blog.hubspot.com/hubfs/image8-2.jpg" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Frame BackgroundColor="White" HeightRequest="50" WidthRequest="50" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/124/124021.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                        </StackLayout>
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

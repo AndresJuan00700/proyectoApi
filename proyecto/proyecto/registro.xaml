@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.registro">
+    <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        <StackLayout >
+            <Frame CornerRadius="100" HeightRequest="100" WidthRequest="100" Padding="0" HorizontalOptions="Center" Margin="7,7,0,7">
+                <Image Source="https://cdn-icons.flaticon.com/png/512/2550/premium/2550359.png?token=exp=1653082509~hmac=d15f456e39b304aa217110c76d177961" WidthRequest="100" HeightRequest="100"/>
+            </Frame>
+
+            <Label Text="Registre su cuenta"
+                       Margin="0,10,0,10"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       TextColor="Black" 
+                       FontSize="25"
+                       FontAttributes="Bold"/>
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons.flaticon.com/png/512/4227/premium/4227203.png?token=exp=1653082752~hmac=4b95349799433c84e6969ee9aa45771c" HeightRequest="50" WidthRequest="40"/>
+                    <Entry Placeholder="Nombre" PlaceholderColor="Black" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons.flaticon.com/png/512/4227/premium/4227203.png?token=exp=1653082752~hmac=4b95349799433c84e6969ee9aa45771c" HeightRequest="50" WidthRequest="40"/>
+                    <Entry Placeholder="Apellido" PlaceholderColor="Black" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/15/15874.png" HeightRequest="35" WidthRequest="30"/>
+                    <Entry Placeholder="Telefono" PlaceholderColor="Black" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/447/447031.png" HeightRequest="35" WidthRequest="35"/>
+                    <Entry Placeholder="Dirección" PlaceholderColor="Black" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons.flaticon.com/png/512/2530/premium/2530107.png?token=exp=1653083016~hmac=83812c067bf847d72e75ad45b1c0d43f" HeightRequest="35" WidthRequest="30"/>
+                    <Entry Placeholder="Email" PlaceholderColor="Black" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/7124/7124264.png" HeightRequest="35" WidthRequest="35"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="Black" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <ImageButton  Source="https://cdn-icons.flaticon.com/png/512/5166/premium/5166492.png?token=exp=1653083141~hmac=042c9cde9dd3760100098ea30aa8f6a7"
+                        x:Name="btnRegister"                        
+                        WidthRequest="70"
+                        CornerRadius="100"      
+                        HorizontalOptions="Center" 
+                        BackgroundColor="LemonChiffon"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
